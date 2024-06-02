@@ -9,7 +9,15 @@ Before we dive into the nitty-gritty of setting up Hyprland, let's make sure you
 ### Toolbox Essentials
 1. **AUR Helper:** You'll need an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers) to tap into the goodness of the Arch User Repository. While any AUR helper will do the trick, I'm partial to [yay](https://aur.archlinux.org/packages/yay) for its efficiency and user-friendliness.
 
+    ```
+    pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+    ```
+
 2. **Audio Setup:** Install and configure [Pipewire](https://wiki.archlinux.org/title/PipeWire) and [Wireplumber](https://wiki.archlinux.org/title/WirePlumber) for audio management. This modern audio setup will replace traditional systems like PulseAudio, providing better performance and flexibility.
+
+    ```
+    pacman -S pipewire wireplumber
+    ```
 
 3. **Nerd Fonts:** Elevate your visual game with these Nerd Fonts:
     * Cascadia Code
@@ -18,16 +26,36 @@ Before we dive into the nitty-gritty of setting up Hyprland, let's make sure you
     * Iosevka
     * Noto
     * Nerd Font Symbols
-    
+
+    ```
+    pacman -S ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono
+    ```
     These fonts aren't just easy on the eyes; they also boost icon support across your system, adding a touch of nerdiness to your setup.
 
 4. **Display Manager:** While any display manager will work, I highly recommend [SDDM](https://wiki.archlinux.org/title/SDDM) due to its high compatibility with Hyprland. 
 
+    ```
+    pacman -S sddm
+    systemctl enable sddm.service
+    ```
+
 5. **Web Browser:** We'll be using [Firefox](https://wiki.archlinux.org/title/firefox) as our trusty internet companion. It's not just for browsing cat memes; it'll also be your gateway to configurations, wikis, and, of course, this guide.
+    ```
+    pacman -S firefox
+    ```
 
 6. **Terminal Application:** Install [Kitty](https://wiki.archlinux.org/title/Kitty) as your terminal emulator. While any terminal will technically work, the official Hyprland default config needs Kitty. Don't worry, we can always tweak it later if you prefer a different terminal (there's a workaround for everything, right?).
 
-7. **Text/Code Editor:** Use any text or code editor that floats your boat. I'll be using Visual Studio Code for its user-friendliness and feature-richness, but if you're a vim loyalist, feel free to stick with your beloved editor.
+    ```
+    pacman -S kitty
+    ```
+
+7. **Text/Code Editor:** Use any text or code editor that floats your boat. I'll be using Visual Studio Code and nano for simplicity, but if you're a vim loyalist, feel free to stick with your beloved editor.
+
+    ```
+    yay -S visual-studio-code-bin
+    sudo pacman -S nano
+    ```
 
 ### Skillset Checklist
 1. **Basic Linux Command Line Knowledge:** You'll be spending some quality time in the terminal, so make sure you're comfortable with the command line.
