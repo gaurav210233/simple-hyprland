@@ -1,5 +1,4 @@
 # Hyprland & Critical Softwares
-
 Now that our base system is set up with all the prerequisites, it's time to start transforming your setup with Hyprland. In this section, we'll walk you through installing Hyprland and essential software to ensure a smooth and efficient workflow.
 
 ### Hyprland Installation
@@ -22,6 +21,8 @@ Now that our base system is set up with all the prerequisites, it's time to star
     Some default keybindings to keep handy:
     * `SUPER + C`: Kill the active window
     * `SUPER + M`: Quit hyprland (but why would you want to?)
+
+* How to access the web(this tutorial), open kitty and launch Firefox with `firefox`
 
 4. Add the necessary environment variables to your `hyprland.conf`.
     * 
@@ -56,7 +57,6 @@ Now that our base system is set up with all the prerequisites, it's time to star
     A notification daemon is essential for handling system notifications. If you're unsure which to use, dunst is a worthy choice.
     ```
     pacman -S dunst
-
     ```
 ### Restart Hyprland    
 After installing the critical software and making the necessary configurations, restart your Hyprland session to apply the changes. This will ensure that all new settings and software are properly loaded.

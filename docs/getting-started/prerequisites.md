@@ -1,5 +1,3 @@
-
-
 # Prerequisites
 Before we dive into the nitty-gritty of setting up Hyprland, let's make sure you've got your ducks in a row. These prerequisites will ensure a smooth sail through the installation and configuration process, so you can bask in the glory of a customized tiling experience.
 
