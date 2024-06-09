@@ -1,0 +1,88 @@
+* {
+    font-family: JetBrains Mono, Symbols Nerd Font;
+    font-size: 24px;
+    transition-property: background-color;
+    transition-duration: 0.7s;
+}
+
+window {
+    background-color: #11111b;
+    /* border-radius: 10px; */
+}
+
+button {
+    background-color: #11111b;
+    border-style: solid;
+    /* border-width: 2px; */
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+    margin: 15px;
+}
+
+button:active,
+button:hover {
+    background-color: #cdd6f4;
+}
+
+button:focus {
+    background-color: #cdd6f4;
+}
+
+#lock {
+    background-image: image(url("~/.config/assets/wlogout/assets/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#lock:hover {
+    background-image: image(url("~/.config/assets/wlogout/assets/lock-hover.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+    color: #11111b;
+}
+
+#logout {
+    background-image: image(url("~/.config/assets/wlogout/assets/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#logout:hover {
+    background-image: image(url("~/.config/assets/wlogout/assets/logout-hover.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+    color: #11111b;
+}
+
+#suspend {
+    background-image: image(url("~/.config/assets/wlogout/assets/sleep.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+}
+
+#suspend:hover {
+    background-image: image(url("~/.config/assets/wlogout/assets/sleep-hover.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+    color: #11111b;
+}
+
+#shutdown {
+    background-image: image(url("/~.config/wassets/logout/assets/power.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#shutdown:hover {
+    background-image: image(url("~/.config/assets/wlogout/assets/power-hover.png"), url("/usr/local/share/wlogout/icons/shutdown.png")); 
+    color: #11111b;
+}
+
+#reboot {
+    background-image: image(url("~/.config/assets/wlogout/assets/restart.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}
+
+#reboot:hover {
+    background-image: image(url("~/.config/assets/wlogout/assets/restart-hover.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+    color: #11111b;
+}
+
+#exit {
+    background-image: image(url("~/.config/assets/wlogout/assets/restart.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+    background-color: #11111b;
+
+}
+
+#exit:hover {
+    background-image: image(url("~/.config/assets/wlogout/assets/restart-hover.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+    color: #11111b;
+    background-color: #cdd6f4;
+}
