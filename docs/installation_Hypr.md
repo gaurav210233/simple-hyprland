@@ -44,9 +44,9 @@ To access web resources, open Kitty and execute `brave-browser` to launch the Br
     
     * To autostart Polkit, append the following to your `hyprland.conf`:
 
-    ```
-    exec-once=/usr/lib/polkit-kde-authentication-agent-1
-    ```
+        ```
+        exec-once=/usr/lib/polkit-kde-authentication-agent-1
+        ```
 
     * Note: Ensure there's no whitespace between `=` and `/`.
 
@@ -64,9 +64,9 @@ To access web resources, open Kitty and execute `brave-browser` to launch the Br
 
     * To autostart dunst, append the following to your `hyprland.conf`:
 
-    ```
-    exec-once=/usr/bin/dunst
-    ```
+        ```
+        exec-once=/usr/bin/dunst
+        ```
 
 ### Hyprland Session Reload  
 After installing the critical software components and making the necessary configurations, restart your Hyprland session to ensure all new settings and software are properly initialized and integrated.
