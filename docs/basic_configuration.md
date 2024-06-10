@@ -1,32 +1,35 @@
 # Basic Configuration
 
-Now that you've installed Hyprland and some essential software, it's time to configure your setup for optimal usability. This guide will help you configure key aspects of your system by editing the `hyprland.conf` file.
+Having installed Hyprland and essential system components, we now proceed to configure basics of your environment for optimal functionality and efficiency. This section will guide you through the configuration of key aspects by modifying the `hyprland.conf` file.
 
-Open your config file and start editing with me.
+Navigate to your configuration file and commence editing.
 
-### Monitor Configuration
-The optimal monitor configuration is set up by default, but there are other options too, like setting the exact refresh rate and resolution, mirroring, and many more. Refer to the  [Hyprland Monitor Configuration Wiki](https://wiki.hyprland.org/Configuring/Monitors/) for detailed options and setups.
+#### 1. Monitor Configuration
+The default monitor configuration is optimized for most setups. However, for advanced configurations such as setting precise refresh rates, resolutions, or mirroring displays, refer to the [Hyprland Monitor Configuration Wiki](https://wiki.hyprland.org/Configuring/Monitors/).
 
-### User Programs
-Define your frequently used programs for easy access:
+#### 2. User Programs
+Define frequently used applications for rapid access:
 
 ```
-# Set programs that you use
+# Define primary applications
 $terminal = kitty
 $fileManager = dolphin
-$browser = firefox
+$browser = brave-browser
 $editor = code
 ```
 
-### Autostart Configuration
-Autostart essential applications and services. We have already added Polkit in the previous step.
+#### 3. Autostart Configuration
+Autostart critical applications and services. We have previously configured Polkit and dunst daemon for autostart.
+
 ```
-# Autostart necessary processes
-exec-once=/usr/lib/polkit-kde-authentication-agent-1 # Polkit to manage passwords
-# your other programs here
+## Autostart essential processes
+exec-once=/usr/lib/polkit-kde-authentication-agent-1 # Polkit for privilege management
+exec-once=/usr/bin/dunst
+# Additional autostart entries
 ```
-### Environment Variables
-Set up environment variables to ensure compatibility and performance. You can keep these as they are, as you will need to configure them later.
+
+#### 4. Environment Variables
+Configure environment variables to ensure compatibility and performance. You can copy and paste these as it is, as anyway you will need to configure them later.
 
 ```
 # QT
@@ -46,10 +49,10 @@ env = XDG_CURRENT_DESKTOP,Hyprland
 env = XDG_SESSION_TYPE,wayland
 env = XDG_SESSION_DESKTOP,Hyprland
 ```
-### Look and Feel
-Adjust the appearance of your Hyprland environment. More details will be provided later, but for now, keep the settings basic.
+#### 5. Look and Feel
+Adjust the appearance and behavior of your Hyprland environment. Detailed customization will be covered in subsequent sections.
 
-Change things like gaps_in, gaps_out, border_size according to your comfort. You can keep them as they are, as you will change them later.
+Change things like `gaps_in, gaps_out, border_size, resizing_on_border`, etc. according to your comfort. 
 
 ```
 general { 
@@ -64,9 +67,10 @@ general {
 }
 ```
 
-### Input Configuration
-Configure your input devices, including keyboard layouts and touchpad settings.
-Most of the defaults will work, but you might want to change things like natural scroll, workspace swipe, etc.
+#### 6. Input Configuration
+Configure input devices, including keyboard layouts and touchpad settings:
+
+Most of the defaults will work, but you might want to change things like `natural_scroll, workspace_swipe`, etc.
 
 ```
 input {
@@ -85,22 +89,23 @@ gestures {
 }
 ```
 
-### Keybindings
-Set up keybindings for efficient workflow management.
-This will be important for now, as you do not have any application launcher, so you will need to remember the keybindings for some time (you will learn them eventually).
+#### 7. Keybindings
+Configure keybindings for efficient workflow management. Note that these bindings are crucial as we haven't yet configured an application launcher.
 
-Try to make meaningful binds like T for terminal, B for browser, C for code, F for file manager, and Q for quit.
+**Pro Tip:** Try to make meaningful binds like T for terminal, B for browser, C for code, F for file manager, and Q for quit.
 
 You might want to change the volume and brightness of your system. To do that, install the following software:
 
 ```
-# Install brightnessctl to adjust brightness
+# Brightness control
 pacman -S brightnessctl
 
-# Install pamixer to handle volume
+# Volume control
 pacman -S pamixer
 ```
-After installing the required software, add the following binds:
+
+After installing the utilities, add the following bindings:
+
 ```
 $mainMod = SUPER
 
@@ -112,27 +117,6 @@ bind = $mainMod, M, exit,
 bind = $mainMod, F, exec, $fileManager
 bind = $mainMod, W, togglefloating,
 
-# Move focus with mainMod + arrow keys
-bind = $mainMod, left, movefocus, l
-bind = $mainMod, right, movefocus, r
-bind = $mainMod, up, movefocus, u
-bind = $mainMod, down, movefocus, d
-
-# Switch workspaces with mainMod + [0-9]
-bind = $mainMod, 1, workspace, 1
-bind = $mainMod, 2, workspace, 2
-bind = $mainMod, 3, workspace, 3
-bind = $mainMod, 4, workspace, 4
-bind = $mainMod, 5, workspace, 5
-bind = $mainMod, 6, workspace, 6
-bind = $mainMod, 7, workspace, 7
-bind = $mainMod, 8, workspace, 8
-bind = $mainMod, 9, workspace, 9
-bind = $mainMod, 0, workspace, 10
-
-# Move/resize windows with mainMod + LMB/RMB and dragging
-bindm = $mainMod, mouse:272, movewindow
-bindm = $mainMod, mouse:273, resizewindow
 
 # Volume and Media Control
 bind = , XF86AudioRaiseVolume, exec, pamixer -i 5 
@@ -148,8 +132,8 @@ bind = , XF86AudioPrev, exec, playerctl previous
 bind = , XF86MonBrightnessUp, exec, brightnessctl s +5%
 bind = , XF86MonBrightnessDown, exec, brightnessctl s 5%-
 ```
-There are other binds you will add as you progress.
+We will add more binds as we progress.
 
-For more information on keybindings, visit the [Hyprland Keybindings Wiki](https://wiki.hyprland.org/Configuring/Binds/).
+For comprehensive keybinding documentation, refer to the [Hyprland Keybindings Wiki](https://wiki.hyprland.org/Configuring/Binds/).
 
-Now your minimal system is ready, and you can start using Hyprland. Further comes the most beautiful part, like adding status bars, adding launchers, wallpaper utilities, etc., so continue with me.
+With your minimal Hyprland environment now operational, we're poised to elevate it from functional to phenomenal. In the following sections, we'll supercharge your setup with sleek status bars, lightning-fast application launchers, and dynamic wallpaper utilities. Brace yourself for a deep dive into advanced customization that will transform your desktop into a powerhouse of aesthetics and efficiency. The groundwork is laid; now it's time to unleash the full potential of your Hyprland environment.
