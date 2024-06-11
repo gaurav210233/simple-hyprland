@@ -55,6 +55,12 @@ This guide assumes understanding of Linux systems, particularly [Arch Linux](htt
     pacman -S nano
     ```
 
+8. **tar:** The tar command is a utility for archiving and extracting files. It will be essential for managing various archives throughout the installation process.
+
+    ```
+    pacman -S tar
+    ```
+
 #### Assumed Competencies
 *  **Basic Linux Command Line Knowledge:** You'll be spending some quality time in the terminal, so make sure you're comfortable with the command line.
 
