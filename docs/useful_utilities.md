@@ -1,206 +1,267 @@
-# Useful Utilities
-In this tutorial, I will guide you through the installation and configuration of various essential tools such as status bars, clipboard managers, app launchers, and more. These utilities will enhance the usability of your Hyprland setup. Additionally, I will provide configurations that you can copy directly from my setup.
+# Enhancing Your Hyprland Environment
 
-### Status Bars
-A status bar provides a quick and convenient way to view system information such as time, date, battery level, network status, and more. It helps you stay informed about your system's state at a glance.
+This section guides you through the installation and configuration of essential utilities that will elevate your Hyprland experience, augmenting both functionality and aesthetics. We'll cover status bars, application launchers, clipboard managers, and more, providing concise configuration snippets directly from my setup.
+
+**Pro Tip:** In your hyprland.conf, organize similar configurations together, such as variables, exec-once statements, and keybindings, for better readability and maintainability.
+
+
+#### 1. Status Bar: Waybar
+Waybar provides real-time system information at a glance, ensuring you stay informed about your system's status.
 
 ##### Installation
-For this tutorial, we will use waybar, which is commonly used and has many features.
-To install waybar, use the following command:
+
 ```
 pacman -S waybar
 ```
+
 ##### Configuration
-It will use some default configuration, you can copy my configuration files to get bar like this:
+Customize the appearance and behavior of the status bar by modifying the following files:
+1. `~/.config/waybar/config.jsonc` - tFormat and structure the bar.
+2. `~/.config/waybar/style.css` - Style and theme the bar.
+
+It will use some default configuration, you can copy my configuration files:
 
 ```
-cp my_config_path ~/.config/waybar
+cp ~/Simple-Hyprland/configs/waybar ~/.config/
 ```
 
-##### Keybinds
-Add the following keybinding to your Hyprland config:
+**Note:** Note: Remember to reload the bar to apply any configuration changes.
+
+##### Hypr
+Add the following keybinding to reload the bar:
 
 ```
 bind = Ctrl, Escape, exec, killall waybar || waybar
 ```
 
-### Clipboard Manager
-A clipboard manager allows you to keep track of your clipboard history, making it easier to access previously copied items. This is particularly useful for improving productivity when working with multiple pieces of information.
+Autostart the bar with:
+
+```
+exec-once=waybar
+```
+
+#### 2. App Launcher: Tofi
+Tofi offers a minimalistic, Wayland-native application launcher for efficient application access.
 
 ##### Installation
-For this tutorial, we will use wl-clipboard and cliphist, which are well-integrated with Wayland and offer robust features.
-To install wl-clipboard and cliphist, use the following command:
 
-```
-pacman -S wl-clipboard cliphist
-```
-##### Configuration
-Add the following to your Hyprland config for clipboard management:
-
-```
-exec-once = wl-paste --type text --watch cliphist store
-exec-once = wl-paste --type image --watch cliphist store
-```
-Refer to my configuration [here]().
-
-##### Keybinds
-Add the following keybinding to your Hyprland config:
-
-```
-bind = SUPER, V, exec, cliphist list | tofi -c ~/.config/tofi/configV | cliphist decode | wl-copy
-
-```
-### App Launchers
-An app launcher provides a quick and efficient way to launch applications without needing to navigate through menus. It can significantly speed up your workflow by reducing the time spent searching for applications.
-
-##### Installation
-For this tutorial, we will use tofi, which is well-suited for Wayland and offers extensive customization options.
-
-To install tofi, use the following command:
 ```
 yay -S tofi
 ```
+
 ##### Configuration
-Copy my configuration into `~/.config/tofi/configA`:
+Customize the appearance and behavior of the launcher by modifying the configuration file:
+
+`~/.config/tofi/` - The configuration directory.
+
+You can copy my pre-configured files:
 
 ```
-cp my_config_path ~/.config/tofi/configA
+cp ~/Simple-Hyprland/configs/tofi ~/.config/tofi
 ```
-##### Keybinds
-Add the following keybinding to your Hyprland config:
+
+##### Hypr
+Keybinding to launch the application menu:
 
 ```
 bind = $mainMod, A, exec, $menu
 ```
 
-### Wallpaper
-A wallpaper utility allows you to set and manage your desktop background, enhancing the visual appeal of your workspace.
+Define the launcher command and configuration path:
+
+```
+$menu = tofi-drun -c ~/.config/tofi/configA --drun-launch=true
+```
+
+#### 3. Clipboard Manager:  Cliphist
+Cliphist enables you to keep track of your clipboard history, enhancing productivity when working with multiple pieces of information.
 
 ##### Installation
-For this tutorial, we will use `swww`, which is commonly used with Wayland.
+To install cliphist, use the following command:
+
+```
+pacman -S cliphist
+```
+
+##### Configuration
+No specific configuration is needed.
+
+##### Hypr
+Keybinding to access the clipboard history:
+
+```
+bind = SUPER, V, exec, cliphist list | tofi -c ~/.config/tofi/configV | cliphist decode | wl-copy
+```
+
+Autostart the clipboard manager:
+
+```
+exec-once = wl-paste --type text --watch cliphist store
+exec-once = wl-paste --type image --watch cliphist store
+```
+
+#### 4. Wallpaper: Swww
+Swww allows you to set and manage your desktop background, enhancing the visual appeal of your workspace.
+
+##### Installation
 To install `swww`, use the following command:
 
 ```
 yay -S swww
 ```
+
 ##### Configuration
-Add the following to your Hyprland config to set a wallpaper:
+Copy sample wallpapers (creates the assets folder inside .config):
+
+```
+cp ~/Simple-Hyprland/assets/backgrounds ~/.config/assets
+```
+
+No specific configuration is needed.
+
+##### Hypr
+Initialize the wallpaper daemon and set a wallpaper on startup:
 
 ```
 exec-once = swww init
-exec-once = set wallpaper here
+exec-once = swww img ~/.config/assets/backgrounds/cat_leaves.png  --transition-fps 255 --transition-type outer --transition-duration 0.8
 ```
-Refer to my configuration here.
 
-##### Keybinds
-Add the following keybinding to your Hyprland config for changing wallpapers:
+You can also set the keybinding to change the wallpaper :
 
 ```
-bind = SUPER, W, exec, swaybg -i /path/to/another/wallpaper.jpg # Change wallpaper
+bind = SUPER, N, exec, swww img ~/.config/assets/backgrounds/dark-cat-rosewater.png  --transition-fps 255 --transition-type outer --transition-duration 0.8 # Change wallpaper
 ```
-### Color Picker
-A color picker is useful for selecting colors directly from your screen, which is helpful for design and development tasks.
+
+#### 5. Color Picker: Hyprpicker
+Hyprpicker allows you to select colors directly from your screen, a handy tool for design and development tasks.
 
 ##### Installation
-For this tutorial, we will use wlr-randr and hyprpicker, which are well-integrated with Wayland.
-To install hyprpicker, use the following command:
 
 ```
 pacman -S hyprpicker
 ```
+
 ##### Configuration
 No specific configuration is needed for hyprpicker.
 
-##### Keybinds
-Add the following keybinding to your Hyprland config:
+##### Hypr
+Define a variable for the color picker and a keybinding to launch it:
 
 ```
-bind = SUPER, P, exec, hyprpicker
+$colorPicker = hyprpicker
+bind = SUPER, P, exec, $colorPicker | wl-copy
 ```
 
-### Screen Locker
+#### 6. Screen Locker: Hyprlock
 A screen locker secures your computer when you are away, preventing unauthorized access.
 
 ##### Installation
-For this tutorial, we will use hyprlock, which is designed to work well with Hyprland.
-To install hyprlock, use the following command:
+Install hyprlock, which is designed to work well with Hyprland.
 
 ```
 yay -S hyprlock
 ```
 ##### Configuration
-No specific configuration is needed for hyprlock.
+Customize the screen locker by modifying the configuration file: `~/.config/hypr/hyprlock.conf`
 
-##### Keybinds
-Add the following keybinding to your Hyprland config:
+You can copy my configuration file:
+
+```
+cp ~/Simple-Hyprland/configs/hypr/hyprlock.conf ~/.config/hypr/
+```
+
+##### Hypr
+Keybinding to lock the desktop:
 
 ```
 bind = SUPER, L, exec, hyprlock
 ```
-### Idle Manager
-An idle manager can automatically lock your screen or take other actions when your system is idle, enhancing security and power management.
+
+#### 7. Idle Manager: Hypridle
+Hypridle automatically locks your screen or takes other actions when your system is idle, enhancing security and power management.
 
 ##### Installation
-For this tutorial, we will use hypridle, which is designed for Hyprland.
 To install hypridle, use the following command:
 
 ```
 yay -S hypridle
 ```
+
 ##### Configuration
-Add the following to your Hyprland config to manage idleness:
+Customize the idle manager behavior by modifying the configuration file: `~/.config/hypr/hypridle.conf`
+
+You can copy my configuration file:
+
 ```
-exec-once = hypridle -l hyprlock
+cp ~/Simple-Hyprland/configs/hypr/hypridle.conf ~/.config/hypr/
 ```
-Refer to my configuration here.
 
-##### Keybinds
-No specific keybindings are needed for hypridle.
+##### Hypr
+No specific keybindings or variables are needed for hypridle.
 
 
-### Logout Menu
-A logout menu provides a convenient way to log out, restart, or shut down your system.
+Autostart the idle manager:
+```
+exec-once = hypridle
+```
+
+
+#### 8. Logout Menu: Wlogout
+Wlogout provides a convenient way to log out, restart, or shut down your system.
+
 
 ##### Installation
-For this tutorial, we will use wlogout, which is a Wayland-native logout utility.
-To install wlogout, use the following command:
 
 ```
 pacman -S wlogout
 ```
+
 ##### Configuration
-Create a configuration file at ~/.config/wlogout/config with the following content:
+Customize the appearance and behavior of the logout menu by modifying the following files:
+1. `~/.config/wlogout/layout` - Format and structure the menu.
+2. `~/.config/wlogout/style.css` - Style and theme the menu.
 
-Refer to my configuration here.
-
-##### Keybinds
-Add the following keybinding to your Hyprland config:
+It will use some default configuration, You can copy my pre-configured files:
 
 ```
-bind = SUPER, Shift, Q, exec, wlogout
+cp ~/Simple-Hyprland/configs/wlogout ~/.config/
+cp ~/Simple-Hyprland/configs/assets/wlogout ~/.config/assets # copying assets
 ```
 
-### Taking Screenshots
-A screenshot tool allows you to capture your screen, which is useful for documentation, sharing information, and troubleshooting.
+##### Hypr
+Keybinding to launch the logout menu:
+
+```
+bind = SUPER, ESCAPE, exec, wlogout
+```
+
+#### 9. Taking Screenshots: Grimblast
+Grimblast is a script that wraps around grim and slurp, providing enhanced functionality for capturing screenshots.
 
 ##### Installation
-For this tutorial, we will use grimblast, which is a script that wraps around grim and slurp for enhanced screenshot functionality.
-To install grimblast, use the following command:
 
 ```
 yay -S grimblast
 ```
+
 ##### Configuration
 No specific configuration is needed for grimblast.
 
-##### Keybinds
-Add the following keybindings to your Hyprland config:
+##### Hypr
+Keybindings for capturing screenshots:
 
 ```
-# Fullscreen screenshot
-bind = SUPER, Print, exec, grimblast save active ~/Pictures/screenshot-$(date +%F-%T).png
+# add --cursor flag to include cursor also, --freeze flag to freeze before selection
 
-# Selective screenshot
-bind = SUPER, Shift, Print, exec, grimblast save area ~/Pictures/screenshot-$(date +%F-%T).png
+# Entire screen + clipboard copy
+bind = , Print, exec, grimblast --notify copysave screen 
+
+# current Active window only + clipboard copy
+bind = SUPER, Print, exec, grimblast --notify copysave active 
+
+# Select area to take screenshot
+bind = SUPER ALT, Print, exec, grimblast --notify copysave area 
 ```
-By following this guide, you will have a fully functional and efficient Hyprland setup with all the essential utilities.
+
+With these utilities configured, your Hyprland environment now boasts enhanced functionality, aesthetics, and user experience, tailored to your preferences and workflow.
