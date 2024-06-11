@@ -56,6 +56,8 @@ yay -S kvantum-theme-catppuccin
 3. Open the `qt6ct` (QT6 Settings) and set the icon theme.
 4. Optionally, you can change other settings like font size, cursor theme, etc.
 
+By default all the configs we used in the previous tutorial are configured with catppuccin color theme.
+
 ### Theming applications
 At this stage, you might want to theme specific applications to achieve a uniform look across your desktop environment.
 
