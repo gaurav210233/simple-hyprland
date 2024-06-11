@@ -55,7 +55,7 @@ This guide assumes understanding of Linux systems, particularly [Arch Linux](htt
     pacman -S nano
     ```
 
-8. **tar:** The tar command is a utility for archiving and extracting files. It will be essential for managing various archives throughout the installation process.
+8. **tar:** The [tar](https://www.baeldung.com/linux/tar-command) command is a utility for archiving and extracting files. It will be essential for managing various archives throughout the installation process.
 
     ```
     pacman -S tar

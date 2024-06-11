@@ -4,7 +4,7 @@ In this guide, we'll transform your Hyprland setup into a visually stunning envi
 ### Installing Essential Tools
 
 #### nwg-look
-nwg-look simplifies the process of setting GTK themes, enabling a cohesive look across different toolkits.
+[nwg-look](https://github.com/nwg-piotr/nwg-look) simplifies the process of setting GTK themes, enabling a cohesive look across different toolkits.
 
 ##### Installation
 
@@ -12,7 +12,7 @@ nwg-look simplifies the process of setting GTK themes, enabling a cohesive look 
 pacman -S nwg-look
 ```
 
-#### qt5ct, qt6ct, Kvantum
+#### [qt5ct](https://github.com/desktop-app/qt5ct), [qt6ct](https://github.com/trialuser02/qt6ct), [Kvantum](https://github.com/tsujan/Kvantum/tree/master/Kvantum)
 These tools are essential for managing and applying themes to QT5 and QT6 applications, ensuring a consistent appearance across your desktop environment.
 
 ##### Installation
@@ -26,7 +26,7 @@ We've already added the necessary QT environment variables during the basic conf
 
 ### Installing themes and icons
 #### GTK Themes
-Place the themes in the system theme directory. For this guide, we'll install the Catppuccin theme, a visually appealing option.
+Place the themes in the system theme directory. For this guide, we'll install the [Catppuccin theme](https://github.com/catppuccin/catppuccin) taken from [hyprdots](https://github.com/prasanthrangan/hyprdots) repo, a visually appealing option.
 
 Extract the theme from the repos assets to the following location to apply it system-wide:
 
@@ -35,7 +35,7 @@ tar -xzvf ~/simple-hyprland/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/
 ```
 
 #### Icon Theme
-Place the icon theme in the system icon directory. We'll install the Tela icon theme.
+Place the icon theme in the system icon directory. We'll install the [Tela icon theme](https://github.com/vinceliuice/Tela-icon-theme) also from hyprdots.
 
 Extract the theme from our assets to the following location to apply it system-wide:
 
@@ -85,6 +85,8 @@ windowrulev2 = opacity 0.90 0.90,class:^(kitty)$
 ```
 
 **Pro Tip:** To get the class_name for a specific window, use the command `hyprctl clients` while the window is open.
+
+For more details refer [Hyprland Window Rules](https://wiki.hyprland.org/Configuring/Window-Rules/).
 
 #### 2. Adding Animation and decorations
 Animations and decorations can add a touch of flair to your desktop experience.

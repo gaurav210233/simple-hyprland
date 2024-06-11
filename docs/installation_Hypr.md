@@ -56,7 +56,7 @@ To access web resources, open Kitty and execute `brave-browser` to launch the Br
     pacman -S qt5-wayland qt6-wayland
     ```
 
-4. **Notification Daemon:** A notification daemon is essential for managing system notifications. Many apps may freeze without one running. Dunst is a lightweight, customizable option:
+4. **Notification Daemon:** A notification daemon is essential for managing system notifications. Many apps may freeze without one running. [Dunst](https://github.com/dunst-project/dunst) is a lightweight, customizable option:
 
     ```
     pacman -S dunst

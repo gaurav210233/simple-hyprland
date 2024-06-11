@@ -2,11 +2,11 @@
 
 This section guides you through the installation and configuration of essential utilities that will elevate your Hyprland experience, augmenting both functionality and aesthetics. We'll cover status bars, application launchers, clipboard managers, and more, providing concise configuration snippets directly from my setup.
 
-**Pro Tip:** In your hyprland.conf, organize similar configurations together, such as variables, exec-once statements, and keybindings, for better readability and maintainability.
+**Pro Tip:** In your `hyprland.conf`, organize similar configurations together, such as variables, exec-once statements, and keybindings, for better readability and maintainability.
 
 
 #### 1. Status Bar: Waybar
-Waybar provides real-time system information at a glance, ensuring you stay informed about your system's status.
+[Waybar](https://github.com/Alexays/Waybar) provides real-time system information at a glance, ensuring you stay informed about your system's status.
 
 ##### Installation
 
@@ -41,7 +41,7 @@ exec-once=waybar
 ```
 
 #### 2. App Launcher: Tofi
-Tofi offers a minimalistic, Wayland-native application launcher for efficient application access.
+[Tofi](https://github.com/philj56/tofi) offers a minimalistic, Wayland-native application launcher for efficient application access.
 
 ##### Installation
 
@@ -74,7 +74,7 @@ $menu = tofi-drun -c ~/.config/tofi/configA --drun-launch=true
 ```
 
 #### 3. Clipboard Manager:  Cliphist
-Cliphist enables you to keep track of your clipboard history, enhancing productivity when working with multiple pieces of information.
+[Cliphist](https://github.com/sentriz/cliphist) enables you to keep track of your clipboard history, enhancing productivity when working with multiple pieces of information.
 
 ##### Installation
 To install cliphist, use the following command:
@@ -101,7 +101,7 @@ exec-once = wl-paste --type image --watch cliphist store
 ```
 
 #### 4. Wallpaper: Swww
-Swww allows you to set and manage your desktop background, enhancing the visual appeal of your workspace.
+[Swww](https://github.com/LGFae/swww) allows you to set and manage your desktop background, enhancing the visual appeal of your workspace.
 
 ##### Installation
 To install `swww`, use the following command:
@@ -134,7 +134,7 @@ bind = SUPER, N, exec, swww img ~/.config/assets/backgrounds/dark-cat-rosewater.
 ```
 
 #### 5. Color Picker: Hyprpicker
-Hyprpicker allows you to select colors directly from your screen, a handy tool for design and development tasks.
+[Hyprpicker](https://github.com/hyprwm/hyprpicker) allows you to select colors directly from your screen, a handy tool for design and development tasks.
 
 ##### Installation
 
@@ -150,14 +150,14 @@ Define a variable for the color picker and a keybinding to launch it:
 
 ```
 $colorPicker = hyprpicker
-bind = SUPER, P, exec, $colorPicker | wl-copy
+bind = SUPER, P, exec, $colorPicker | wl-copy # Also copies to clipboard
 ```
 
 #### 6. Screen Locker: Hyprlock
 A screen locker secures your computer when you are away, preventing unauthorized access.
 
 ##### Installation
-Install hyprlock, which is designed to work well with Hyprland.
+Install [hyprlock](https://github.com/hyprwm/hyprlock), which is designed to work well with Hyprland.
 
 ```
 yay -S hyprlock
@@ -179,7 +179,7 @@ bind = SUPER, L, exec, hyprlock
 ```
 
 #### 7. Idle Manager: Hypridle
-Hypridle automatically locks your screen or takes other actions when your system is idle, enhancing security and power management.
+[Hypridle](https://github.com/hyprwm/hypridle) automatically locks your screen or takes other actions when your system is idle, enhancing security and power management.
 
 ##### Installation
 To install hypridle, use the following command:
@@ -208,8 +208,7 @@ exec-once = hypridle
 
 
 #### 8. Logout Menu: Wlogout
-Wlogout provides a convenient way to log out, restart, or shut down your system.
-
+[Wlogout](https://github.com/ArtsyMacaw/wlogout) provides a convenient way to log out, restart, or shut down your system.
 
 ##### Installation
 
@@ -237,7 +236,7 @@ bind = SUPER, ESCAPE, exec, wlogout
 ```
 
 #### 9. Taking Screenshots: Grimblast
-Grimblast is a script that wraps around grim and slurp, providing enhanced functionality for capturing screenshots.
+[Grimblast](https://github.com/hyprwm/contrib/blob/main/grimblast/grimblast.1.scd) is a script that wraps around grim and slurp, providing enhanced functionality for capturing screenshots.
 
 ##### Installation
 
