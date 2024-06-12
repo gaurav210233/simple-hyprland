@@ -5,9 +5,6 @@ By the end of this guide, you'll have a clean and functional Hyprland setup like
 
 <img src="assets/github_repo/imges/final-setup-01.png" alt="final-setup-01">
 <img src="assets/github_repo/imges/final-setup-02.png" alt="final-setup-02">
-<video width="1920" height="1080" controls>
-    <source src="assets/github_repo/videos/simple-hyprland-setup.mp4" type="video/mp4">
-</video>
 
 ### Purpose ✨
 
