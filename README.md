@@ -5,7 +5,6 @@ By the end of this guide, you'll have a clean and functional Hyprland setup like
 
 <img src="assets/github_repo/imges/final-setup-01.png" alt="final-setup-01">
 <img src="assets/github_repo/imges/final-setup-02.png" alt="final-setup-02">
-https://github.com/gaurav210233/simple-hyprland/assets/113800473/3a333893-ed49-4e9c-901c-04f7657540e8
 
 ### Purpose ✨
 
