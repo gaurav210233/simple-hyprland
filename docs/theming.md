@@ -73,6 +73,12 @@ cp ~/Simple-Hyprland/configs/kitty ~/.config/
 #### 2. VS Code: The Code editor
 Install the Catppuccin theme extension from the Visual Studio Code Marketplace.
 
+#### 3. Dunst: Notification daemon
+Copy the configuration file i.e. `dunstrc`.
+
+```
+cp ~/Simple-Hyprland/configs/dunst ~/.config/
+```
 
 ### Misc
 Some additional enhancements to elevate the overall feel and experience.
