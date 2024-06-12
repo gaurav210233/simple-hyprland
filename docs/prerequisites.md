@@ -76,3 +76,5 @@ This guide assumes understanding of Linux systems, particularly [Arch Linux](htt
 *  **Update Your System:** Keep your system up to date before starting the installation to avoid any potential conflicts.
 
 With these prerequisites in place, you're primed to delve into the intricacies of the Simple Hyprland guide and craft a cool, tiling-based environment on your Arch Linux system.
+
+Next: [Core Installation](docs/installation_Hypr.md)

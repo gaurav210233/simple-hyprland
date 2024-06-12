@@ -71,3 +71,4 @@ To access web resources, open Kitty and execute `brave-browser` to launch the Br
 ### Hyprland Session Reload  
 After installing the critical software components and making the necessary configurations, restart your Hyprland session to ensure all new settings and software are properly initialized and integrated.
 
+Next: [Basic Configuration](docs/basic_configuration.md)
