@@ -265,4 +265,4 @@ bind = SUPER ALT, Print, exec, grimblast --notify copysave area
 
 With these utilities configured, your Hyprland environment now boasts enhanced functionality, aesthetics, and user experience, tailored to your preferences and workflow.
 
-Next: [Theming](docs/theming.md)
+Next: [Theming](theming.md)
