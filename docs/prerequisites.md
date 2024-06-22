@@ -1,10 +1,10 @@
-# Prerequisites
+# Prerequisites 🚀
 This guide assumes understanding of Linux systems, particularly [Arch Linux](https://archlinux.org/). The following prerequisites are essential for the seamless installation and setup of Hyprland on your system.
 
-## Base System
+## Base System 💻
 **Arch Linux:**  A minimal Arch Linux Installation is required. It's assumed that you're well-versed with the [Arch installation process]((https://wiki.archlinux.org/title/Installation_guide)) and have a functional base system ready for Hyprland integration.
 
-## Toolbox Essentials
+## Toolbox Essentials 🧰
 1. **AUR Helper:** An [AUR helper](https://wiki.archlinux.org/title/AUR_helpers) s indispensable for efficient package management from the Arch User Repository. While the choice of helper is discretionary, I'm partial to [yay](https://aur.archlinux.org/packages/yay) for its efficiency and user-friendliness.
 
     ```
@@ -61,7 +61,7 @@ This guide assumes understanding of Linux systems, particularly [Arch Linux](htt
     pacman -S tar
     ```
 
-## Assumed Competencies
+## Assumed Competencies 🧠
 *  **Basic Linux Command Line Knowledge:** You'll be spending some quality time in the terminal, so make sure you're comfortable with the command line.
 
 *  **Package Management:** Understanding how to install and manage packages using pacman and an AUR helper is a must.
@@ -70,11 +70,11 @@ This guide assumes understanding of Linux systems, particularly [Arch Linux](htt
 
 *  **Troubleshooting:** Some hiccups may occur along the way, so basic troubleshooting skills will come in handy.
 
-## Additional Recommendations
+## Additional Recommendations 📌
 *  **Backup Your Data:** Ensure you have backups of any important data before embarking on this journey.
 
 *  **Update Your System:** Keep your system up to date before starting the installation to avoid any potential conflicts.
 
 With these prerequisites in place, you're primed to delve into the intricacies of the Simple Hyprland guide and craft a cool, tiling-based environment on your Arch Linux system.
 
-**Next:** [Core Installation](installation_Hypr.md)
+**Next:** [Core Installation](installation_Hypr.md) 👉
