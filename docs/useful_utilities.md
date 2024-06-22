@@ -5,7 +5,7 @@ This section guides you through the installation and configuration of essential 
 **Pro Tip:** In your `hyprland.conf`, organize similar configurations together, such as variables, exec-once statements, and keybindings, for better readability and maintainability.
 
 
-#### 1. Status Bar: Waybar
+## Status Bar: Waybar
 [Waybar](https://github.com/Alexays/Waybar) provides real-time system information at a glance, ensuring you stay informed about your system's status.
 
 ##### Installation
@@ -40,7 +40,7 @@ Autostart the bar with:
 exec-once=waybar
 ```
 
-#### 2. App Launcher: Tofi
+## App Launcher: Tofi
 [Tofi](https://github.com/philj56/tofi) offers a minimalistic, Wayland-native application launcher for efficient application access.
 
 ##### Installation
@@ -73,7 +73,7 @@ Define the launcher command and configuration path:
 $menu = tofi-drun -c ~/.config/tofi/configA --drun-launch=true
 ```
 
-#### 3. Clipboard Manager:  Cliphist
+## Clipboard Manager:  Cliphist
 [Cliphist](https://github.com/sentriz/cliphist) enables you to keep track of your clipboard history, enhancing productivity when working with multiple pieces of information.
 
 ##### Installation
@@ -100,7 +100,7 @@ exec-once = wl-paste --type text --watch cliphist store
 exec-once = wl-paste --type image --watch cliphist store
 ```
 
-#### 4. Wallpaper: Swww
+## Wallpaper: Swww
 [Swww](https://github.com/LGFae/swww) allows you to set and manage your desktop background, enhancing the visual appeal of your workspace.
 
 ##### Installation
@@ -133,7 +133,7 @@ You can also set the keybinding to change the wallpaper :
 bind = SUPER, N, exec, swww img ~/.config/assets/backgrounds/dark-cat-rosewater.png  --transition-fps 255 --transition-type outer --transition-duration 0.8 # Change wallpaper
 ```
 
-#### 5. Color Picker: Hyprpicker
+## Color Picker: Hyprpicker
 [Hyprpicker](https://github.com/hyprwm/hyprpicker) allows you to select colors directly from your screen, a handy tool for design and development tasks.
 
 ##### Installation
@@ -153,7 +153,7 @@ $colorPicker = hyprpicker
 bind = SUPER, P, exec, $colorPicker | wl-copy # Also copies to clipboard
 ```
 
-#### 6. Screen Locker: Hyprlock
+## Screen Locker: Hyprlock
 A screen locker secures your computer when you are away, preventing unauthorized access.
 
 ##### Installation
@@ -178,7 +178,7 @@ Keybinding to lock the desktop:
 bind = SUPER, L, exec, hyprlock
 ```
 
-#### 7. Idle Manager: Hypridle
+## Idle Manager: Hypridle
 [Hypridle](https://github.com/hyprwm/hypridle) automatically locks your screen or takes other actions when your system is idle, enhancing security and power management.
 
 ##### Installation
@@ -207,7 +207,7 @@ exec-once = hypridle
 ```
 
 
-#### 8. Logout Menu: Wlogout
+## Logout Menu: Wlogout
 [Wlogout](https://github.com/ArtsyMacaw/wlogout) provides a convenient way to log out, restart, or shut down your system.
 
 ##### Installation
@@ -235,7 +235,7 @@ Keybinding to launch the logout menu:
 bind = SUPER, ESCAPE, exec, wlogout
 ```
 
-#### 9. Taking Screenshots: Grimblast
+## Taking Screenshots: Grimblast
 [Grimblast](https://github.com/hyprwm/contrib/blob/main/grimblast/grimblast.1.scd) is a script that wraps around grim and slurp, providing enhanced functionality for capturing screenshots.
 
 ##### Installation

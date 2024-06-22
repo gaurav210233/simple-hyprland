@@ -1,7 +1,7 @@
 # Hyprland & Critical Softwares
 With the prerequisite base system established, we proceed to the core of this guide. This section delineates the process of installing Hyprland and configuring critical system software to ensure a robust and efficient workflow.
 
-### Hyprland Installation
+## Hyprland Installation
 1. **Install Hyprland:** 
 
     ```
@@ -29,7 +29,7 @@ To remove the warning:
 
 To access web resources, open Kitty and execute `brave-browser` to launch the Brave browser.
 
-### Critical System Components
+## Critical System Components
 1. **XDG Desktop Portal:** The XDG Desktop Portal is crucial for handling desktop functionalities such as file dialogs and screensharing.
 
     ```
@@ -68,7 +68,7 @@ To access web resources, open Kitty and execute `brave-browser` to launch the Br
         exec-once=/usr/bin/dunst
         ```
 
-### Hyprland Session Reload  
+## Hyprland Session Reload  
 After installing the critical software components and making the necessary configurations, restart your Hyprland session to ensure all new settings and software are properly initialized and integrated.
 
 Next: [Basic Configuration](basic_configuration.md)

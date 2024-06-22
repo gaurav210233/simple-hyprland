@@ -1,7 +1,7 @@
 # Theming, Look & feel
 In this guide, we'll transform your Hyprland setup into a visually stunning environment by applying themes to various components. A well-themed desktop not only looks great but also enhances your workflow and overall user experience.
 
-### Installing Essential Tools
+## Installing Essential Tools
 
 #### nwg-look
 [nwg-look](https://github.com/nwg-piotr/nwg-look) simplifies the process of setting GTK themes, enabling a cohesive look across different toolkits.
@@ -24,7 +24,7 @@ pacman -S qt5ct qt6ct kvantum
 ##### Adding QT Environment Variables
 We've already added the necessary QT environment variables during the basic configuration step.
 
-### Installing themes and icons
+## Installing themes and icons
 #### GTK Themes
 Place the themes in the system theme directory. For this guide, we'll install the [Catppuccin theme](https://github.com/catppuccin/catppuccin) taken from [hyprdots](https://github.com/prasanthrangan/hyprdots) repo, a visually appealing option.
 
@@ -50,7 +50,7 @@ For Arch-based systems, install the kvantum-theme-catppuccin from the AUR:
 yay -S kvantum-theme-catppuccin
 ```
 
-### Setting the Themes
+## Setting the Themes
 1. Use `nwg-look` to set the global GTK and icon theme, and apply the changes.
 2. Open the `kvantummanager` (with sudo to apply as root theme), select the desired theme, and apply it.
 3. Open the `qt6ct` (QT6 Settings) and set the icon theme.
@@ -58,7 +58,7 @@ yay -S kvantum-theme-catppuccin
 
 By default all the configs we used in the previous tutorial are configured with catppuccin color theme.
 
-### Theming applications
+## Theming applications
 At this stage, you might want to theme specific applications to achieve a uniform look across your desktop environment.
 
 #### 1. Kitty: The terminal emulator
@@ -80,7 +80,7 @@ Copy the configuration file i.e. `dunstrc`.
 cp ~/Simple-Hyprland/configs/dunst ~/.config/
 ```
 
-### Misc
+## Misc
 Some additional enhancements to elevate the overall feel and experience.
 
 #### 1. Adding blur to the windows
