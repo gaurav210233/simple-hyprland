@@ -3,8 +3,8 @@ Welcome to the Simple Hyprland Guide! This repository is designed to help users 
 
 By the end of this guide, you'll have a clean and functional Hyprland setup like this:
 
-<img src="assets/github_repo/imges/final-setup-01.png" alt="final-setup-01">
-<img src="assets/github_repo/imges/final-setup-02.png" alt="final-setup-02">
+<img src="/assets/github_repo/images/final-setup-01.png" alt="final-setup-01">
+<img src="/assets/github_repo/images/final-setup-02.png" alt="final-setup-02">
 
 ## Purpose ✨
 This guide is intended for:
