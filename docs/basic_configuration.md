@@ -1,13 +1,13 @@
-# Basic Configuration
+# Basic Configuration 🛠️
 
 Having installed Hyprland and essential system components, we now proceed to configure basics of your environment for optimal functionality and efficiency. This section will guide you through the configuration of key aspects by modifying the `hyprland.conf` file.
 
 Navigate to your configuration file and commence editing.
 
-#### 1. Monitor Configuration
+#### 1. Monitor Configuration 🖥️
 The default monitor configuration is optimized for most setups. However, for advanced configurations such as setting precise refresh rates, resolutions, or mirroring displays, refer to the [Hyprland Monitor Configuration Wiki](https://wiki.hyprland.org/Configuring/Monitors/).
 
-#### 2. User Programs
+#### 2. User Programs 📚
 Define frequently used applications for rapid access:
 
 ```
@@ -18,7 +18,7 @@ $browser = brave-browser
 $editor = code
 ```
 
-#### 3. Autostart Configuration
+#### 3. Autostart Configuration 🚀
 Autostart critical applications and services. We have previously configured Polkit and dunst daemon for autostart.
 
 ```
@@ -28,7 +28,7 @@ exec-once=/usr/bin/dunst
 # Additional autostart entries
 ```
 
-#### 4. Environment Variables
+#### 4. Environment Variables 🌍
 Configure environment variables to ensure compatibility and performance. You can copy and paste these as it is, as anyway you will need to configure them later.
 
 ```
@@ -49,7 +49,7 @@ env = XDG_CURRENT_DESKTOP,Hyprland
 env = XDG_SESSION_TYPE,wayland
 env = XDG_SESSION_DESKTOP,Hyprland
 ```
-#### 5. Look and Feel
+#### 5. Look and Feel 🎨
 Adjust the appearance and behavior of your Hyprland environment. Detailed customization will be covered in subsequent sections.
 
 Change things like `gaps_in, gaps_out, border_size, resizing_on_border`, etc. according to your comfort. 
@@ -67,7 +67,7 @@ general {
 }
 ```
 
-#### 6. Input Configuration
+#### 6. Input Configuration ⌨️🖱️
 Configure input devices, including keyboard layouts and touchpad settings:
 
 Most of the defaults will work, but you might want to change things like `natural_scroll, workspace_swipe`, etc.
@@ -89,10 +89,10 @@ gestures {
 }
 ```
 
-#### 7. Keybindings
+#### 7. Keybindings ⌨️
 Configure keybindings for efficient workflow management. Note that these bindings are crucial as we haven't yet configured an application launcher.
 
-**Pro Tip:** Try to make meaningful binds like T for terminal, B for browser, C for code, F for file manager, and Q for quit.
+**Pro Tip:** 💡 Try to make meaningful binds like T for terminal, B for browser, C for code, F for file manager, and Q for quit.
 
 You might want to change the volume and brightness of your system. To do that, install the following software:
 
@@ -136,6 +136,6 @@ We will add more binds as we progress.
 
 For comprehensive keybinding documentation, refer to the [Hyprland Keybindings Wiki](https://wiki.hyprland.org/Configuring/Binds/).
 
-With your minimal Hyprland environment now operational, we're poised to elevate it from functional to phenomenal. In the following sections, we'll supercharge your setup with sleek status bars, lightning-fast application launchers, and dynamic wallpaper utilities. Brace yourself for a deep dive into advanced customization that will transform your desktop into a powerhouse of aesthetics and efficiency. The groundwork is laid; now it's time to unleash the full potential of your Hyprland environment.
+With your minimal Hyprland environment now operational, we're poised to elevate it from functional to phenomenal. In the following sections, we'll supercharge your setup with sleek status bars, lightning-fast application launchers, and dynamic wallpaper utilities. Brace yourself for a deep dive into advanced customization that will transform your desktop into a powerhouse of aesthetics and efficiency. The groundwork is laid; now it's time to unleash the full potential of your Hyprland environment. 🚀✨
 
-Next: [Useful Utilities](useful_utilities.md)
+**Next:** [Useful Utilities](useful_utilities.md) 👉
