@@ -16,7 +16,7 @@ pacman -S waybar
 
 ##### Configuration
 Customize the appearance and behavior of the status bar by modifying the following files:
-1. `~/.config/waybar/config.jsonc` - tFormat and structure the bar.
+1. `~/.config/waybar/config.jsonc` - Format and structure the bar.
 2. `~/.config/waybar/style.css` - Style and theme the bar.
 
 It will use some default configuration, you can copy my configuration files:
