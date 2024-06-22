@@ -1,12 +1,14 @@
-# Enhancing Your Hyprland Environment
+# Enhancing Your Hyprland Environment 🚀
 
 This section guides you through the installation and configuration of essential utilities that will elevate your Hyprland experience, augmenting both functionality and aesthetics. We'll cover status bars, application launchers, clipboard managers, and more, providing concise configuration snippets directly from my setup.
 
-**Pro Tip:** In your `hyprland.conf`, organize similar configurations together, such as variables, exec-once statements, and keybindings, for better readability and maintainability.
+**Pro Tip:** 💡 In your `hyprland.conf`, organize similar configurations together, such as variables, exec-once statements, and keybindings, for better readability and maintainability.
 
 
-## Status Bar: Waybar
+## Status Bar: Waybar 📊
 [Waybar](https://github.com/Alexays/Waybar) provides real-time system information at a glance, ensuring you stay informed about your system's status.
+
+<img src="/assets/github_repo/images/waybar.png" alt="waybar">
 
 ##### Installation
 
@@ -22,10 +24,10 @@ Customize the appearance and behavior of the status bar by modifying the followi
 It will use some default configuration, you can copy my configuration files:
 
 ```
-cp ~/Simple-Hyprland/configs/waybar ~/.config/
+cp -r ~/Simple-Hyprland/configs/waybar ~/.config/
 ```
 
-**Note:** Note: Remember to reload the bar to apply any configuration changes.
+**Note:** 📝 Note: Remember to reload the bar to apply any configuration changes.
 
 ##### Hypr
 Add the following keybinding to reload the bar:
@@ -40,8 +42,10 @@ Autostart the bar with:
 exec-once=waybar
 ```
 
-## App Launcher: Tofi
+## App Launcher: Tofi 🚀
 [Tofi](https://github.com/philj56/tofi) offers a minimalistic, Wayland-native application launcher for efficient application access.
+
+<img src="/assets/github_repo/images/tofi-applauncher.png" alt="tofi-applauncher">
 
 ##### Installation
 
@@ -57,7 +61,7 @@ Customize the appearance and behavior of the launcher by modifying the configura
 You can copy my pre-configured files:
 
 ```
-cp ~/Simple-Hyprland/configs/tofi ~/.config/tofi
+cp -r ~/Simple-Hyprland/configs/tofi ~/.config/
 ```
 
 ##### Hypr
@@ -73,8 +77,10 @@ Define the launcher command and configuration path:
 $menu = tofi-drun -c ~/.config/tofi/configA --drun-launch=true
 ```
 
-## Clipboard Manager:  Cliphist
+## Clipboard Manager:  Cliphist 📋
 [Cliphist](https://github.com/sentriz/cliphist) enables you to keep track of your clipboard history, enhancing productivity when working with multiple pieces of information.
+
+<img src="/assets/github_repo/images/tofi-clipboard.png" alt="tofi-clipboard">
 
 ##### Installation
 To install cliphist, use the following command:
@@ -100,7 +106,7 @@ exec-once = wl-paste --type text --watch cliphist store
 exec-once = wl-paste --type image --watch cliphist store
 ```
 
-## Wallpaper: Swww
+## Wallpaper: Swww 🖼️
 [Swww](https://github.com/LGFae/swww) allows you to set and manage your desktop background, enhancing the visual appeal of your workspace.
 
 ##### Installation
@@ -114,7 +120,7 @@ yay -S swww
 Copy sample wallpapers (creates the assets folder inside .config):
 
 ```
-cp ~/Simple-Hyprland/assets/backgrounds ~/.config/assets
+cp -r ~/Simple-Hyprland/assets/backgrounds ~/.config/assets/
 ```
 
 No specific configuration is needed.
@@ -133,8 +139,10 @@ You can also set the keybinding to change the wallpaper :
 bind = SUPER, N, exec, swww img ~/.config/assets/backgrounds/dark-cat-rosewater.png  --transition-fps 255 --transition-type outer --transition-duration 0.8 # Change wallpaper
 ```
 
-## Color Picker: Hyprpicker
+## Color Picker: Hyprpicker 🎨
 [Hyprpicker](https://github.com/hyprwm/hyprpicker) allows you to select colors directly from your screen, a handy tool for design and development tasks.
+
+<img src="/assets/github_repo/images/hyprpicker.png" alt="hyprpicker">
 
 ##### Installation
 
@@ -153,7 +161,7 @@ $colorPicker = hyprpicker
 bind = SUPER, P, exec, $colorPicker | wl-copy # Also copies to clipboard
 ```
 
-## Screen Locker: Hyprlock
+## Screen Locker: Hyprlock 🔒
 A screen locker secures your computer when you are away, preventing unauthorized access.
 
 ##### Installation
@@ -178,7 +186,7 @@ Keybinding to lock the desktop:
 bind = SUPER, L, exec, hyprlock
 ```
 
-## Idle Manager: Hypridle
+## Idle Manager: Hypridle ⏳
 [Hypridle](https://github.com/hyprwm/hypridle) automatically locks your screen or takes other actions when your system is idle, enhancing security and power management.
 
 ##### Installation
@@ -207,8 +215,10 @@ exec-once = hypridle
 ```
 
 
-## Logout Menu: Wlogout
+## Logout Menu: Wlogout 🚪
 [Wlogout](https://github.com/ArtsyMacaw/wlogout) provides a convenient way to log out, restart, or shut down your system.
+
+<img src="/assets/github_repo/images/wlogout.png" alt="wlogout">
 
 ##### Installation
 
@@ -224,8 +234,8 @@ Customize the appearance and behavior of the logout menu by modifying the follow
 It will use some default configuration, You can copy my pre-configured files:
 
 ```
-cp ~/Simple-Hyprland/configs/wlogout ~/.config/
-cp ~/Simple-Hyprland/configs/assets/wlogout ~/.config/assets # copying assets
+cp -r ~/Simple-Hyprland/configs/wlogout ~/.config/
+cp -r ~/Simple-Hyprland/configs/assets/wlogout ~/.config/assets/ # copying assets
 ```
 
 ##### Hypr
@@ -235,8 +245,10 @@ Keybinding to launch the logout menu:
 bind = SUPER, ESCAPE, exec, wlogout
 ```
 
-## Taking Screenshots: Grimblast
+## Taking Screenshots: Grimblast 📸
 [Grimblast](https://github.com/hyprwm/contrib/blob/main/grimblast/grimblast.1.scd) is a script that wraps around grim and slurp, providing enhanced functionality for capturing screenshots.
+
+<img src="/assets/github_repo/images/grimblast.png" alt="grimblast">
 
 ##### Installation
 
@@ -263,6 +275,6 @@ bind = SUPER, Print, exec, grimblast --notify copysave active
 bind = SUPER ALT, Print, exec, grimblast --notify copysave area 
 ```
 
-With these utilities configured, your Hyprland environment now boasts enhanced functionality, aesthetics, and user experience, tailored to your preferences and workflow.
+With these utilities configured, your Hyprland environment now boasts enhanced functionality, aesthetics, and user experience, tailored to your preferences and workflow. 🎉✨
 
-Next: [Theming](theming.md)
+**Next:** [Theming](theming.md) 👉
