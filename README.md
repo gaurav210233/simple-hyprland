@@ -6,8 +6,7 @@ By the end of this guide, you'll have a clean and functional Hyprland setup like
 <img src="assets/github_repo/imges/final-setup-01.png" alt="final-setup-01">
 <img src="assets/github_repo/imges/final-setup-02.png" alt="final-setup-02">
 
-### Purpose ✨
-
+## Purpose ✨
 This guide is intended for:
 
 **Newcomers transitioning to Hyprland who want to gain knowledge.** 👋 If you're new to Hyprland and looking to understand the ins and outs of setting it up, this guide will take you through the process step-by-step, explaining each component along the way.
@@ -16,29 +15,29 @@ This guide is intended for:
 
 **Individuals looking to save time by following a structured and efficient setup process.** ⏱️ While many guides and resources are available, they can be scattered and overwhelming. This guide consolidates the essential steps into a streamlined workflow, helping you get up and running with Hyprland quickly and efficiently.
 
-### Getting Started 🚀
+## Getting Started 🚀
 If you're new to this guide, you can start from the [Prerequisites section](docs/prerequisites.md). This document outlines the necessary tools, packages, and assumptions required for a smooth installation and setup process.
 
-### Documentation 📚
+## Documentation 📚
 1. [Prerequisites](docs/prerequisites.md)
 2. [Core Installation](docs/installation_Hypr.md)
 3. [Basic Configuration](docs/basic_configuration.md)
 4. [Useful Utilities](docs/useful_utilities.md)
 5. [Theming](docs/theming.md)
 
-### Compatibility ⚙️
+## Compatibility ⚙️
 While this guide is created with [Arch Linux](https://archlinux.org/) in mind, it can also be helpful for users of other distributions who are familiar with their package management and system tweaking.
 
-### Credits 🙏
+## Credits 🙏
 Many configuration parts, themes, and scripts in this guide are sourced from the community. I extend my thanks to all contributors, especially the [Hyprland project](https://github.com/hyprwm/Hyprland) and other cool repositories like [hyprdots](https://github.com/prasanthrangan/hyprdots). If you find that credit has not been given where due, please feel free to open a Pull Request (PR).
 
-### Future Work 🔮
+## Future Work 🔮
 * A script to automate the whole process to save time.
 * Small scripts to perform various tasks.
 * Extra Setup for NVIDIA card users.
 * Showcasing cool derived minimal setups.
 
-### References 📖
+## References 📖
 * [Hyprland Wiki](https://wiki.hyprland.org/)
 * [Hyprdots Repo](https://github.com/prasanthrangan/hyprdots)
 * [Hyprland-titus Repo](https://github.com/ChrisTitusTech/hyprland-titus) and more.
