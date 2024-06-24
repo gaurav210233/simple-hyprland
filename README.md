@@ -24,6 +24,7 @@ If you're new to this guide, you can start from the [Prerequisites section](docs
 3. [Basic Configuration](docs/basic_configuration.md)
 4. [Useful Utilities](docs/useful_utilities.md)
 5. [Theming](docs/theming.md)
+6. [Summary](docs/final.md)
 
 ## Compatibility ⚙️
 While this guide is created with [Arch Linux](https://archlinux.org/) in mind, it can also be helpful for users of other distributions who are familiar with their package management and system tweaking.
