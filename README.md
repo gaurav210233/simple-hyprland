@@ -31,12 +31,6 @@ While this guide is created with [Arch Linux](https://archlinux.org/) in mind, i
 ## Credits 🙏
 Many configuration parts, themes, and scripts in this guide are sourced from the community. I extend my thanks to all contributors, especially the [Hyprland project](https://github.com/hyprwm/Hyprland) and other cool repositories like [hyprdots](https://github.com/prasanthrangan/hyprdots). If you find that credit has not been given where due, please feel free to open a Pull Request (PR).
 
-## Future Work 🔮
-* A script to automate the whole process to save time.
-* Small scripts to perform various tasks.
-* Extra Setup for NVIDIA card users.
-* Showcasing cool derived minimal setups.
-
 ## References 📖
 * [Hyprland Wiki](https://wiki.hyprland.org/)
 * [Hyprdots Repo](https://github.com/prasanthrangan/hyprdots)
