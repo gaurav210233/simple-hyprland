@@ -120,7 +120,7 @@ yay -S swww
 Copy sample wallpapers (creates the assets folder inside .config):
 
 ```
-cp -r ~/simple-hyprland/assets/backgrounds ~/.config/assets/
+cp -r ~/simple-hyprland/assets/backgrounds ~/.config/assets/backgrounds/
 ```
 
 No specific configuration is needed.
@@ -147,7 +147,7 @@ bind = SUPER, N, exec, swww img ~/.config/assets/backgrounds/dark-cat-rosewater.
 ##### Installation
 
 ```
-pacman -S hyprpicker
+yay -S hyprpicker
 ```
 
 ##### Configuration
@@ -223,7 +223,7 @@ exec-once = hypridle
 ##### Installation
 
 ```
-pacman -S wlogout
+yay -S wlogout
 ```
 
 ##### Configuration
@@ -235,7 +235,7 @@ It will use some default configuration, You can copy my pre-configured files:
 
 ```
 cp -r ~/simple-hyprland/configs/wlogout ~/.config/
-cp -r ~/simple-hyprland/configs/assets/wlogout ~/.config/assets/ # copying assets
+cp -r ~/simple-hyprland/assets/wlogout ~/.config/assets/ # copying assets
 ```
 
 ##### Hypr

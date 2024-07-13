@@ -31,7 +31,7 @@ Place the themes in the system theme directory. For this guide, we'll install th
 Extract the theme from the repos assets to the following location to apply it system-wide:
 
 ```
-tar -xzvf ~/simple-hyprland/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
+tar -xvf ~/simple-hyprland/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
 ```
 
 #### Icon Theme
@@ -40,19 +40,19 @@ Place the icon theme in the system icon directory. We'll install the [Tela icon 
 Extract the theme from our assets to the following location to apply it system-wide:
 
 ```
-tar -xzvf ~/simple-hyprland/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/
+tar -xvf ~/simple-hyprland/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/
 ```
 
 #### Kvantum Theme
 For Arch-based systems, install the kvantum-theme-catppuccin from the AUR:
 
 ```
-yay -S kvantum-theme-catppuccin
+yay -S kvantum-theme-catppuccin-git
 ```
 
 ## Setting the Themes 🖼️
 1. Use `nwg-look` to set the global GTK and icon theme, and apply the changes.
-2. Open the `kvantummanager` (with sudo to apply as root theme), select the desired theme, and apply it.
+2. Open the `kvantummanager` (with sudo to apply as root theme , "sudo -E kvantummanager"), select the desired theme, and apply it.
 3. Open the `qt6ct` (QT6 Settings) and set the icon theme.
 4. Optionally, you can change other settings like font size, cursor theme, etc.
 
@@ -68,7 +68,7 @@ Copy the configuration files for the Catppuccin theme:
 2. `theme.conf` - Theme file
 
 ```
-cp -r ~/Simple-Hyprland/configs/kitty ~/.config/
+cp -r ~/simple-hyprland/configs/kitty ~/.config/
 ```
 #### 2. VS Code: The Code editor
 Install the Catppuccin theme extension from the Visual Studio Code Marketplace.
@@ -77,7 +77,7 @@ Install the Catppuccin theme extension from the Visual Studio Code Marketplace.
 Copy the configuration file i.e. `dunstrc`.
 
 ```
-cp -r ~/Simple-Hyprland/configs/dunst ~/.config/
+cp -r ~/simple-hyprland/configs/dunst ~/.config/
 ```
 
 ## Misc 🔧
