@@ -2,9 +2,6 @@
 
 Congratulations on completing the Simple Hyprland Guide! You've successfully set up a minimal, efficient, and visually appealing Hyprland environment on your Arch Linux system. This README serves as a recap of your journey and a reference for future tweaks and enhancements.
 
-![Final Setup 1](/assets/github_repo/images/final-setup-01.png)
-![Final Setup 2](/assets/github_repo/images/final-setup-02.png)
-
 ## What You've Accomplished 🏆
 
 1. **Base Installation**: Set up a minimal Arch Linux system with Hyprland.
