@@ -24,7 +24,7 @@ Customize the appearance and behavior of the status bar by modifying the followi
 It will use some default configuration, you can copy my configuration files:
 
 ```
-cp -r ~/Simple-Hyprland/configs/waybar ~/.config/
+cp -r ~/simple-hyprland/configs/waybar ~/.config/
 ```
 
 **Note:** 📝 Note: Remember to reload the bar to apply any configuration changes.
@@ -61,7 +61,7 @@ Customize the appearance and behavior of the launcher by modifying the configura
 You can copy my pre-configured files:
 
 ```
-cp -r ~/Simple-Hyprland/configs/tofi ~/.config/
+cp -r ~/simple-hyprland/configs/tofi ~/.config/
 ```
 
 ##### Hypr
@@ -120,7 +120,7 @@ yay -S swww
 Copy sample wallpapers (creates the assets folder inside .config):
 
 ```
-cp -r ~/Simple-Hyprland/assets/backgrounds ~/.config/assets/
+cp -r ~/simple-hyprland/assets/backgrounds ~/.config/assets/
 ```
 
 No specific configuration is needed.
@@ -176,7 +176,7 @@ Customize the screen locker by modifying the configuration file: `~/.config/hypr
 You can copy my configuration file:
 
 ```
-cp ~/Simple-Hyprland/configs/hypr/hyprlock.conf ~/.config/hypr/
+cp ~/simple-hyprland/configs/hypr/hyprlock.conf ~/.config/hypr/
 ```
 
 ##### Hypr
@@ -202,7 +202,7 @@ Customize the idle manager behavior by modifying the configuration file: `~/.con
 You can copy my configuration file:
 
 ```
-cp ~/Simple-Hyprland/configs/hypr/hypridle.conf ~/.config/hypr/
+cp ~/simple-hyprland/configs/hypr/hypridle.conf ~/.config/hypr/
 ```
 
 ##### Hypr
@@ -234,8 +234,8 @@ Customize the appearance and behavior of the logout menu by modifying the follow
 It will use some default configuration, You can copy my pre-configured files:
 
 ```
-cp -r ~/Simple-Hyprland/configs/wlogout ~/.config/
-cp -r ~/Simple-Hyprland/configs/assets/wlogout ~/.config/assets/ # copying assets
+cp -r ~/simple-hyprland/configs/wlogout ~/.config/
+cp -r ~/simple-hyprland/configs/assets/wlogout ~/.config/assets/ # copying assets
 ```
 
 ##### Hypr
