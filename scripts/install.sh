@@ -5,10 +5,13 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
+BOLD='\033[1m'
 NC='\033[0m' # No Color
+
 
 # Get the directory of the current script
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # Log file
 LOG_FILE="$SCRIPT_DIR/simple_hyprland_install.log"
 
@@ -16,7 +19,7 @@ LOG_FILE="$SCRIPT_DIR/simple_hyprland_install.log"
 trap 'trap_message' INT TERM
 
 function trap_message {
-    print_error "Script interrupted. Exiting.....\n"
+    print_error "\nScript interrupted. Exiting.....\n"
     # Add any cleanup code here
     log_message "Script interrupted and exited"
     exit 1
@@ -27,19 +30,7 @@ function log_message {
     echo "$(date): $1" >> "$LOG_FILE"
 }
 
-# Function to print ASCII art using figlet if installed, otherwise use print_info
-function print_ascii_art {
-    local text="$1"
-    if command -v figlet &> /dev/null; then
-        echo -e "${BLUE}"
-        figlet -f small "$text"
-        echo -e "${NC}"
-    else
-        print_info "$text"
-    fi
-}
-
-# Functions for colored output
+# Functions for colored/bold output
 function print_error {
     echo -e "${RED}$1${NC}"
 }
@@ -54,6 +45,10 @@ function print_warning {
 
 function print_info {
     echo -e "${BLUE}$1${NC}"
+}
+
+function print_bold_blue {
+    echo -e "${BLUE}${BOLD}$1${NC}"
 }
 
 # Function to ask for confirmation
@@ -110,15 +105,9 @@ function run_script {
 }
 #--------------------------------------------------------------
 
-#    ____ _____  _    ____ _____ 
-#   / ___|_   _|/ \  |  _ \_   _|
-#   \___ \ | | / _ \ | |_) || |  
-#    ___) || |/ ___ \|  _ < | |  
-#   |____/ |_/_/   \_\_| \_\|_|  
-
 # Script start
 log_message "Installation started"
-print_ascii_art "Simple Hyprland"
+print_bold_blue "\nSimple Hyprland\n"
 
 # Check if running as root
 if [ "$EUID" -ne 0 ]; then
@@ -155,5 +144,5 @@ run_script "utilities.sh" "Basic Utilities & Configs"
 run_script "theming.sh" "Themes and Tools"
 run_script "final.sh" "Final"
 
-print_ascii_art "Setup Complete"
+print_bold_blue "Setup Complete\n"
 log_message "Installation completed successfully"
