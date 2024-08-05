@@ -17,7 +17,7 @@ run_command "tar -xvf ~/simple-hyprland/assets/themes/Catppuccin-Mocha.tar.xz -C
 
 run_command "tar -xvf ~/simple-hyprland/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/" "Tela icon theme" "yes"
 
-run_command "yay -S kvantum-theme-catppuccin-git" "Catppuccin kvantum Theme" "yes"
+run_command "yay -S --sudoloop --noconfirm kvantum-theme-catppuccin-git" "Catppuccin kvantum Theme" "yes"
 
 run_command "cp -r ~/simple-hyprland/configs/kitty ~/.config/" "Catppuccin kitty theme" "yes"
 
