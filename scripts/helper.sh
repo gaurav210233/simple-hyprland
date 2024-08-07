@@ -3,7 +3,7 @@
 # Color codes
 RED='\033[0;31m'
 GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
+YELLOW='\033[0;33m'
 BLUE='\033[0;34m'
 BOLD='\033[1m'
 NC='\033[0m' # No Color
@@ -57,10 +57,10 @@ function ask_confirmation {
             return 0  # User confirmed
             elif [[ $REPLY =~ ^[Nn]$ ]]; then
             log_message "Operation cancelled by user."
-            print_error "Operation cancelled.\n"
+            print_error "Operation cancelled."
             return 1  # User cancelled
         else
-            print_error "Invalid input. Please answer y or n.\n"
+            print_error "Invalid input. Please answer y or n."
         fi
     done
 }
@@ -75,8 +75,8 @@ function run_command {
     log_message "Attempting to run: $description"
     
     if [[ "$ask_confirm" == "yes" ]]; then
-        if ! ask_confirmation "Do you want to $description"; then
-            print_warning "$description was skipped."
+        if ! ask_confirmation "\n$description"; then
+            print_info "$description was skipped."
             log_message "$description was skipped by user choice."
             return 1
         fi
@@ -116,14 +116,14 @@ function run_command {
 function run_script {
     local script="$SCRIPT_DIR/$1"
     local description="$2"
-    if ask_confirmation "Do you want to execute '$description' script"; then
+    if ask_confirmation "\nExecute '$description' script"; then
         while ! bash "$script"; do
             print_error "$description script failed."
             if ! ask_confirmation "Retry $description"; then
                 return 1  # User chose not to retry
             fi
         done
-        print_success "\n$description completed successfully.\n"
+        print_success "\n$description completed successfully."
     else
         return 1  # User chose not to run the script
     fi
@@ -151,7 +151,7 @@ function check_os {
                 exit 1
             fi
         else
-            print_success "Arch Linux detected. Proceeding with installation.\n"
+            print_success "Arch Linux detected. Proceeding with installation."
             log_message "Arch Linux detected. Installation proceeding."
         fi
     else
