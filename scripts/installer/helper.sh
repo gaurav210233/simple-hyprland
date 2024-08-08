@@ -71,24 +71,24 @@ function run_command {
     local description="$2"
     local ask_confirm="${3:-yes}"  # Default to asking for confirmation
     local use_sudo="${4:-yes}"     # Default to using sudo
+
+    local full_cmd=""
+    if [[ "$use_sudo" == "no" ]]; then
+        full_cmd="sudo -u $SUDO_USER $cmd"
+    else
+        full_cmd="$cmd"
+    fi
     
     log_message "Attempting to run: $description"
-    
+    print_info "\nCommand: $full_cmd"
     if [[ "$ask_confirm" == "yes" ]]; then
-        if ! ask_confirmation "\n$description"; then
+        if ! ask_confirmation "$description"; then
             # print_info "$description was skipped."
             log_message "$description was skipped by user choice."
             return 1
         fi
     else
         print_info "\n$description"  # Echo what it's doing without confirmation
-    fi
-    
-    local full_cmd=""
-    if [[ "$use_sudo" == "no" ]]; then
-        full_cmd="sudo -u $SUDO_USER $cmd"
-    else
-        full_cmd="$cmd"
     fi
     
     while ! eval "$full_cmd"; do
