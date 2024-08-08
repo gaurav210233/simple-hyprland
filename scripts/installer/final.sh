@@ -14,7 +14,6 @@ echo "   - GitHub Repository: https://github.com/gaurav210233/simple-hyprland"
 echo "   - If you found this repo helpful, please consider giving it a star on GitHub!"
 
 print_bold_blue "\nContribute:"
-echo "   - We welcome contributions! Whether it's bug fixes, new features, or documentation improvements."
 echo "   - Feel free to open issues, submit pull requests, or provide feedback."
 echo "   - Every contribution, big or small, is valuable to the community."
 
