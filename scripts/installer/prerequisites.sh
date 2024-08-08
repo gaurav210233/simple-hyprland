@@ -11,7 +11,7 @@ print_info "\nStarting prerequisites setup..."
 
 run_command "pacman -Syyu --noconfirm" "Update package database and upgrade packages (Recommended)" "yes" # no
 
-run_command "pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd.. # builds with makepkg" "Install YAY (Must)" "yes" # no
+run_command "pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd.. # builds with makepkg" "Install YAY (Must)/Breaks the script" "yes" # no
 
 run_command "pacman -S --noconfirm pipewire wireplumber" "Configuring audio (Recommended)" "yes" 
 
@@ -25,6 +25,6 @@ run_command "pacman -S --noconfirm kitty" "Install Kitty (Recommended)" "yes"
 
 run_command "pacman -S --noconfirm nano" "Install nano" "yes"
 
-run_command "pacman -S --noconfirm tar" "Install tar for extracting files (Must)" "yes"
+run_command "pacman -S --noconfirm tar" "Install tar for extracting files (Must)/needed for copying themes" "yes"
 
 echo "------------------------------------------------------------------------"
