@@ -11,7 +11,8 @@ print_info "\nStarting prerequisites setup..."
 
 run_command "pacman -Syyu --noconfirm" "Update package database and upgrade packages (Recommended)" "yes" # no
 
-run_command "pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd.. # builds with makepkg" "Install YAY (Must)/Breaks the script" "yes" # no
+run_command "pacman -S --noconfirm --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd.. # builds with makepkg" "Install YAY (Must)/Breaks the script" "no" # no
+run_command "git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd.. # builds with makepkg" "Build YAY (Must)/Breaks the script" "no" "no" # no
 
 run_command "pacman -S --noconfirm pipewire wireplumber" "Configuring audio (Recommended)" "yes" 
 
