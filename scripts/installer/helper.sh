@@ -76,7 +76,7 @@ function run_command {
     
     if [[ "$ask_confirm" == "yes" ]]; then
         if ! ask_confirmation "\n$description"; then
-            print_info "$description was skipped."
+            # print_info "$description was skipped."
             log_message "$description was skipped by user choice."
             return 1
         fi
