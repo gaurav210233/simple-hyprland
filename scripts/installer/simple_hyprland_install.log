@@ -1,0 +1,88 @@
+Thu Aug  8 09:28:34 AM IST 2024: Installation started
+Thu Aug  8 09:28:34 AM IST 2024: Original user is gaurav
+Thu Aug  8 09:28:34 AM IST 2024: Arch Linux detected. Installation proceeding.
+Thu Aug  8 09:28:35 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:28:35 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:28:35 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:28:37 AM IST 2024: Operation accepted by user.
+Thu Aug  8 09:28:37 AM IST 2024: Installation started for theming section
+Thu Aug  8 09:28:37 AM IST 2024: Attempting to run: Install nwg-look for GTK theme management
+Thu Aug  8 09:28:38 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:28:38 AM IST 2024: Install nwg-look for GTK theme management was skipped by user choice.
+Thu Aug  8 09:28:38 AM IST 2024: Attempting to run: Install Qt5, Qt6 Settings, and Kvantum theme engines
+Thu Aug  8 09:28:39 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:28:39 AM IST 2024: Install Qt5, Qt6 Settings, and Kvantum theme engines was skipped by user choice.
+Thu Aug  8 09:28:39 AM IST 2024: Attempting to run: Install Catppuccin Mocha GTK theme
+Thu Aug  8 09:28:41 AM IST 2024: Operation accepted by user.
+Thu Aug  8 09:28:41 AM IST 2024: Command failed: tar -xvf ~/simple-hyprland/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
+Thu Aug  8 09:31:47 AM IST 2024: Script interrupted and exited
+Thu Aug  8 09:32:44 AM IST 2024: Installation started
+Thu Aug  8 09:32:44 AM IST 2024: Original user is gaurav
+Thu Aug  8 09:32:44 AM IST 2024: Arch Linux detected. Installation proceeding.
+Thu Aug  8 09:32:45 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:32:45 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:32:45 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:32:47 AM IST 2024: Operation accepted by user.
+Thu Aug  8 09:32:47 AM IST 2024: Installation started for theming section
+Thu Aug  8 09:32:47 AM IST 2024: Attempting to run: Install nwg-look for GTK theme management
+Thu Aug  8 09:32:49 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:32:49 AM IST 2024: Install nwg-look for GTK theme management was skipped by user choice.
+Thu Aug  8 09:32:49 AM IST 2024: Attempting to run: Install Qt5, Qt6 Settings, and Kvantum theme engines
+Thu Aug  8 09:32:50 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:32:50 AM IST 2024: Install Qt5, Qt6 Settings, and Kvantum theme engines was skipped by user choice.
+Thu Aug  8 09:32:50 AM IST 2024: Attempting to run: Install Catppuccin Mocha GTK theme
+Thu Aug  8 09:32:53 AM IST 2024: Operation accepted by user.
+Thu Aug  8 09:32:53 AM IST 2024: Install Catppuccin Mocha GTK theme completed successfully.
+Thu Aug  8 09:32:53 AM IST 2024: Attempting to run: Install Tela Circle Dracula icon theme
+Thu Aug  8 09:32:56 AM IST 2024: Script interrupted and exited
+Thu Aug  8 09:47:14 AM IST 2024: Installation started
+Thu Aug  8 09:47:14 AM IST 2024: Original user is gaurav
+Thu Aug  8 09:47:14 AM IST 2024: Arch Linux detected. Installation proceeding.
+Thu Aug  8 09:47:20 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:47:33 AM IST 2024: Operation accepted by user.
+Thu Aug  8 09:47:33 AM IST 2024: Installation started for hypr section
+Thu Aug  8 09:47:33 AM IST 2024: Attempting to run: Install Hyprland (Must)
+Thu Aug  8 09:47:35 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:47:35 AM IST 2024: Install Hyprland (Must) was skipped by user choice.
+Thu Aug  8 09:47:35 AM IST 2024: Attempting to run: Copy hyprland config (Must)
+Thu Aug  8 09:47:35 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:47:35 AM IST 2024: Copy hyprland config (Must) was skipped by user choice.
+Thu Aug  8 09:47:35 AM IST 2024: Attempting to run: Install XDG desktop portal for Hyprland
+Thu Aug  8 09:47:37 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:47:37 AM IST 2024: Install XDG desktop portal for Hyprland was skipped by user choice.
+Thu Aug  8 09:47:37 AM IST 2024: Attempting to run: Install KDE Polkit agent for authentication dialogs
+Thu Aug  8 09:47:38 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:47:38 AM IST 2024: Install KDE Polkit agent for authentication dialogs was skipped by user choice.
+Thu Aug  8 09:47:38 AM IST 2024: Attempting to run: Install Dunst notification daemon
+Thu Aug  8 09:47:39 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:47:39 AM IST 2024: Install Dunst notification daemon was skipped by user choice.
+Thu Aug  8 09:47:39 AM IST 2024: Attempting to run: Copy dunst config
+Thu Aug  8 09:47:40 AM IST 2024: Operation accepted by user.
+Thu Aug  8 09:47:40 AM IST 2024: Command failed: cp -r /home/gaurav/simple-hyprland/configs/dunst ~/.config/
+Thu Aug  8 09:48:15 AM IST 2024: Script interrupted and exited
+Thu Aug  8 09:48:16 AM IST 2024: Installation started
+Thu Aug  8 09:48:16 AM IST 2024: Original user is gaurav
+Thu Aug  8 09:48:16 AM IST 2024: Arch Linux detected. Installation proceeding.
+Thu Aug  8 09:48:19 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:48:20 AM IST 2024: Operation accepted by user.
+Thu Aug  8 09:48:20 AM IST 2024: Installation started for hypr section
+Thu Aug  8 09:48:20 AM IST 2024: Attempting to run: Install Hyprland (Must)
+Thu Aug  8 09:48:20 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:48:20 AM IST 2024: Install Hyprland (Must) was skipped by user choice.
+Thu Aug  8 09:48:20 AM IST 2024: Attempting to run: Copy hyprland config (Must)
+Thu Aug  8 09:48:21 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:48:21 AM IST 2024: Copy hyprland config (Must) was skipped by user choice.
+Thu Aug  8 09:48:21 AM IST 2024: Attempting to run: Install XDG desktop portal for Hyprland
+Thu Aug  8 09:48:21 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:48:21 AM IST 2024: Install XDG desktop portal for Hyprland was skipped by user choice.
+Thu Aug  8 09:48:21 AM IST 2024: Attempting to run: Install KDE Polkit agent for authentication dialogs
+Thu Aug  8 09:48:21 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:48:21 AM IST 2024: Install KDE Polkit agent for authentication dialogs was skipped by user choice.
+Thu Aug  8 09:48:21 AM IST 2024: Attempting to run: Install Dunst notification daemon
+Thu Aug  8 09:48:23 AM IST 2024: Operation cancelled by user.
+Thu Aug  8 09:48:23 AM IST 2024: Install Dunst notification daemon was skipped by user choice.
+Thu Aug  8 09:48:23 AM IST 2024: Attempting to run: Copy dunst config
+Thu Aug  8 09:48:24 AM IST 2024: Operation accepted by user.
+Thu Aug  8 09:48:24 AM IST 2024: Copy dunst config completed successfully.
+Thu Aug  8 09:48:24 AM IST 2024: Attempting to run: Install QT support on wayland
+Thu Aug  8 09:50:32 AM IST 2024: Script interrupted and exited
