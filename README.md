@@ -102,9 +102,7 @@ After installation, you'll want to familiarize yourself with the default key bin
 - **Super + Print Screen**: Take a screenshot of the active window and copy it to the clipboard.
 - **Super + Alt + Print Screen**: Select an area to take a screenshot and copy it to the clipboard.
 
-
 Make sure to have applications installed corresponding to the binds. Feel free to customize these keybindings to better suit your needs. You can customize these and add more in your Hyprland configuration file (`~/.config/hypr/hyprland.conf`).
-
 
 ## Credits 🙏
 Many configuration parts, themes, and scripts in this guide are sourced from the community. I extend my thanks to all contributors, especially the [Hyprland project](https://github.com/hyprwm/Hyprland) and other cool repositories like [hyprdots](https://github.com/prasanthrangan/hyprdots). If you find that credit has not been given where due, please feel free to open a Pull Request (PR).
