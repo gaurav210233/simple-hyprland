@@ -58,7 +58,7 @@ button:focus {
 }
 
 #shutdown {
-    background-image: image(url("/~.config/assets/logout/assets/power.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+    background-image: image(url("~/.config/assets/logout/assets/power.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
 }
 
 #shutdown:hover {
