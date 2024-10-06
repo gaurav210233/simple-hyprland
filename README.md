@@ -113,3 +113,5 @@ Many configuration parts, themes, and scripts in this guide are sourced from the
 * [Hyprland-titus Repo](https://github.com/ChrisTitusTech/hyprland-titus) and more.
 
 Feel free to explore the documentation and contribute to this guide if you find any improvements or have suggestions. 🤝
+At last I would like to give a special thanks and a shout out to my friend Shashwat Mishra, all of this 
+was not possible without his help and guidance, you can checkout his LinkedIn here: https://www.linkedin.com/in/shashwat1mishra 
