@@ -129,7 +129,7 @@ No specific configuration is needed.
 Initialize the wallpaper daemon and set a wallpaper on startup:
 
 ```
-exec-once = swww init
+exec-once = swww-daemon
 exec-once = swww img ~/.config/assets/backgrounds/cat_leaves.png  --transition-fps 255 --transition-type outer --transition-duration 0.8
 ```
 
