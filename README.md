@@ -48,7 +48,7 @@ While this guide is created with [Arch Linux](https://archlinux.org/) in mind, i
     ```
 #### Important Notes:
 
-- This script is user-centric and allows you to choose which components to install (Everything is asked, even for the core e`).
+- This script is user-centric and allows you to choose which components to install (Everything is asked, even for the core).
 - While the script offers flexibility, it is recommend to installing all components for the best experience, as this is already a minimal setup.
 - The installation process follows the same flow as the documentation, ensuring a structured and educational approach.
 - Although designed for Arch Linux, users of Arch-based distributions may also find this script helpful.
